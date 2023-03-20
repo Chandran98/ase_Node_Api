@@ -46,7 +46,8 @@ exports.getallNft = async (req, res) => {
         nft,
       },
     });
-  } catch (error) {
+  } 
+  catch (error) {
     res.status(400).json({ status: "failed", message: error });
   }
 };
